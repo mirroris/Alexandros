@@ -19,7 +19,7 @@ sigma = {I,V,X,L,C,D,M}
 
 as the same, but note that less than number of four digits have more complicated rules such as four or nine. 
 
-**S2** -> CM | D**SS2** | **SS2**
+**S2** -> CM | CD | D**SS2** | **SS2**
 
 **SS2** -> C**SS2'** | epsilon 
 
