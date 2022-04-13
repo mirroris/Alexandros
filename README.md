@@ -4,7 +4,7 @@ This is a Scheme for transition from a Roman numeral to Arabian one.
 # ローマ数字の翻訳
 ローマ数字をある一つの言語としてとらえる
 
-# Syntax For Roma numerical
+# Syntax For Roma numerl
 I define like this:
 
 sigma = {I,V,X,L,C,D,M}
