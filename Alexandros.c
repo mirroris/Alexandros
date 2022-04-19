@@ -7,7 +7,8 @@ char *lookahead;
 
 
 void iserror(char c){
-    printf("something wrong with %c\n",c);
+    puthcar('?');
+    printf("\nsomething wrong with %c\n",c);
     exit(1);
 }
 
@@ -94,14 +95,15 @@ void second(){
 
 void third_ddd(){
     switch(*lookahead){
-        case 'C':match('C');
+        case 'C':match('C');putchar('3');
     }
     return;
 }
 
 void third_dd(){
     switch(*lookahead){
-        case 'C':match('C');third_ddd();
+        case 'C':   match('C');third_ddd();break;
+        default:    putchar('2');
     }
     return;
 }
@@ -109,7 +111,7 @@ void third_dd(){
 void third_d(){
     switch(*lookahead){
         case 'C':   match('C');third_dd();break;
-        default:    break;
+        default:    putchar('1');break;
     }
     return;
 }
@@ -118,35 +120,37 @@ void third(){
     switch(*lookahead){
         case 'C':   match('C');
             switch (*lookahead) {
-                case 'M':   match('M');break;
-                case 'D':   match('D');break;
+                case 'M':   match('M');putchar('9');break;
+                case 'D':   match('D');putchar('4');break;
                 default:    second_d();
-            } 
-        break;
+          } 
         break;
 
-        case 'D':   match('D'); third_d();
+        case 'D':   match('D'); third_d();break;
+
+        default:    putchar('0');
     }
     return;
 }
 
 void fourth_dd(){
     switch(*lookahead){
-        case 'M':   match('M');
-        default:    break;
+        case 'M':   match('M');putchar('3');break;
+        default:    putchar('2');break;
     }
     return;
 }
 
 void fourth_d(){
     switch(*lookahead){
-        case 'M':   match('M');fourth_dd();
-        default:    break;
+        case 'M':   match('M');fourth_dd();break;
+        default:    putchar('1');break;
     }
     return;    
 }
 
 void fourth(){
+    int i=0;
     switch(*lookahead){
         case 'M':   match('M');fourth_d();break;
         default:    break;
@@ -166,6 +170,6 @@ int main(int argc, char **argv){
         init(argv[n]);
     }
 
-    if(*lookahead != '\0') printf("something wrong with %c\n",*lookahead);
+    if(*lookahead != '\0') printf("?\nsomething wrong with %c\n",*lookahead);
     return 0;
 }
