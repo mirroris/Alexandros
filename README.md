@@ -24,7 +24,7 @@ sigma = {I,V,X,L,C,D,M}
 
 **S3''** -> M | epsilon
 
-as the same, but note that less than number of four digits have more complicated rules such as four or nine. 
+as the same, but note that less than number of four digits have more complicated rules such as 4 or 9. 
 
 **S2** -> CM | CD | D**SS2** | **SS2**
 
@@ -36,7 +36,7 @@ as the same, but note that less than number of four digits have more complicated
 
 as the same rule against less than 3 digits. 
 
-example:replace C to X and D to L and M to C !!,then you'll have a rule for 2 digits.
+example:replace C to X and D to L and M to C !!,then you'll get a rule for 2 digits.
 
 Rejected Procedure:
 **S3** -> M | M**S3'** | epsilon
