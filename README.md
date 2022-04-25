@@ -8,8 +8,11 @@ example)
 
 $ ./Alex IV
 
+If you don't give any argments, then you can execute interactive mode, which litterally enable you to talk with Alex! 
+
 # ローマ数字の翻訳
 ローマ数字をある一つの言語としてとらえる
+構文解析による翻訳
 
 # Syntax For Roma numeral
 I define like this:
