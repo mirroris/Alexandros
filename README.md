@@ -1,18 +1,23 @@
 # Roman_to_Arabian
 This is a Scheme for transition from a Roman numeral to Arabian one.
-ローマ数字をアラビア数字に翻訳します
+ローマ数字をアラビア数字に翻訳します。
+
 # How to use Alex?
 ./Alex {Roman Numeral}   is the way to translate Roman Numerals.
 If you put numbers except Roman ones, the output inform you of that which charactor may be wrong.
 example)
 
 $ ./Alex IV
+$ 4
 
 If you don't give any argments, then you can execute interactive mode, which litterally enable you to talk with Alex! 
 
-# ローマ数字の翻訳
-ローマ数字をある一つの言語としてとらえる
-構文解析による翻訳
+# How to ?
+Actually, I use BNF below. Following the BNF rules, Alex understand the Roman numeral's structures.
+
+What next you should do is translation! This is called translation scheme. 
+
+I adopted the way using translation-tree generated from BNF syntax.
 
 # Syntax For Roma numeral
 I define like this:
