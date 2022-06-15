@@ -47,9 +47,15 @@ as the same rule against less than 3 digits.
 example:replace C to X and D to L and M to C !!,then you'll get a rule for 2 digits.
 
 Rejected Procedure:
+
 **S3** -> M | M**S3'** | epsilon
+
 **S3'** -> M | MM | epsilon
+
 (or
+
 **S3'** -> M | M**S3''** | epsilon
+
 **S3''** -> M | epsilon
+
 )
